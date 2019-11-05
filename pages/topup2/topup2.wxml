@@ -1,0 +1,17 @@
+<view class="title">
+     <text>暂未绑定银行卡</text>
+     <icon class="iconfont icon-you"></icon>
+</view>
+<view class="money">
+     <view class="top">提现金额</view>
+     <view class="middle">
+        <text>￥</text>
+        <input></input>
+     </view>
+     <view class="bottom">
+         可提现金额200元
+     </view>
+</view>
+<view class="btn">
+     确定提现
+</view>

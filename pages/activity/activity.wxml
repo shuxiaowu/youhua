@@ -1,0 +1,90 @@
+<view class="banner">
+     <image src="/img/banner2.png" mode="widthFix"></image>
+</view>
+<view class="con1">
+     <view class="title">
+     <view class="name">新崛起画师2019新作拍卖会</view>
+     <view class="iconfont icon-fenxiang"  bindtap="share"></view>
+    </view>
+    <view class="label2">
+        <view class="left">佣</view>
+        <view class="right">8%</view>
+    </view>
+    <view class="label2 label3">
+        <view class="left">阶</view>
+        <view class="right" bindtap="explain">固定</view>
+    </view>
+    <view class="p">李白（ 701年2月8日-762年） ，字太白，号青莲居士。中国唐朝诗人，有“诗仙” ， “诗侠”之称。有《李太白集》传世，诗作中多以醉时写的，代表作有《望庐山瀑布》、《行路难》、《蜀道难》、《将进酒》、《梁甫吟》、《早发白帝城》等多首。 生平概述 李白（701年2月8日—762年12月） ， 字太白 ，号青莲居士 ，汉族!</view>
+</view>
+<view class="con2">
+     <image class="bg" src="/img/time.png" mode="widthFix"></image>
+     <view class="time">
+          <view class="t1">3</view>
+          <view class="t2">11</view>
+          <view class="t3">26</view>
+          <view class="t4">43</view>
+     </view>
+</view>
+
+<view class="con3">
+     <view class="title">
+    热门拍品
+    </view>
+    <view class="product">
+        <block wx:for="{{product}}">
+            <view class="item">
+                <navigator class="picture" url="{{item.url}}">
+                    <image src="{{item.src}}" mode="widthFix"></image>
+                </navigator>
+                <view class="name">{{item.name}}</view>
+                <view class="price"> <text>当前价</text>￥{{item.price}}</view>
+                <view class="time">
+                    <view class="left">{{item.time}}结拍</view>
+                    <view class="right iconfont {{item.ig==0?'icon-shoucang':'icon-hongxin'}}" bindtap="sc_click" data-on="{{item.id}}"></view>
+                </view>
+                <view class="label" wx:if="{{item.label}}">{{item.label}}</view>
+                <view class="label1" wx:if="{{item.label1}}">{{item.label1}}</view>
+            </view>
+        </block>
+    </view>
+</view>
+
+<view class="explain" wx:if="{{explain}}">
+     <view class="content">
+          <view class="h1">保证金说明</view>
+          <view class="p1">
+                <view class="p">保证金是指用于核算存入银行等金融机构各种保证金性质的存款。</view>  
+                <view class="p">
+                在法律对于保证金缺乏明确规范的背景下，探讨保证金的类型，对于备用金类型的保证金、预付款类型的保证金、租赁保证金、装修保证金、定金类型的保证金、           保有返还请求权的保证金、无双倍返还效力的保证金分别界定，确定各自的法律效力，十分必要。</view>
+                <view class="p">在证券市场融资购买证券时，投资者所需缴纳的自备款。交易保证金是指交易商规定客户入市买入或卖出黄金时，即开盘买卖时客户账户所必须具有的保证金。开户保证金是指交易商规定客户在开设外汇保证金交易账户时，必须交纳的最低存款金额。</view> 
+          </view>
+     </view>
+     <view class="btn" bindtap="know">知道了</view>
+</view>
+
+
+<view class="shade" wx:if="{{shade}}"></view>
+<view class="share" wx:if="{{share}}">
+     <view class="share_list" >
+         <navigator url="../poster/poster" class="item">
+              <image src="/img/share1.png" mode="widthFix"></image>
+              <view class="t">微信</view>
+         </navigator>
+          <navigator url="../poster/poster" class="item">
+              <image src="/img/share2.png" mode="widthFix"></image>
+              <view class="t">朋友圈</view>
+         </navigator>
+          <view class="item" bindtap="hb_click">
+              <image src="/img/share3.png" mode="widthFix"></image>
+              <view class="t">生成海报</view>
+         </view>
+     </view>
+     <view class="cancel" bindtap="cancel">取消</view>
+</view>
+<view class="poster" wx:if="{{poster}}">
+    <image src="/img/hb1.png" mode="widthFix"></image>
+    <view class="bottom">
+         <view class="btn left" bindtap="hb_cancel">取消</view>
+         <view class="btn right">保存</view>
+    </view>
+</view>

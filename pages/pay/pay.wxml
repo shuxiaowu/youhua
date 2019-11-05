@@ -1,0 +1,3 @@
+<image src="../../img/ico31.png" mode="widthFix"></image>
+<view class="p">支付成功</view>
+<navigator url="../order2/order2" class="btn">订单详情</navigator >

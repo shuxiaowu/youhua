@@ -1,0 +1,16 @@
+<view class="content">
+     <view class="time">
+          09-26
+          12:05     
+     </view>
+     <image src="../../img/ico34.png" mode="widthFix"></image>
+     <view class="con">
+          <view class="top">
+              【收货地址】江西省南昌市青山湖区高新 大道巅峰财富广场B座1406
+          </view>
+          <view class="bottom">
+               <view class="title">待发货</view>
+               <view class="p">卖家正在打包中</view>
+          </view>
+     </view>
+</view>

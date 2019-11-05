@@ -1,0 +1,30 @@
+<view class="list">
+     <view class="item">
+           <view class="item">
+              <view class="left">
+                  <view class="top">满1000减120</view>
+                  <view class="bottom">优惠卷</view>
+              </view>
+              <view class="right">
+                  <view class="top">全场通用红包</view>
+                  <view class="middle">有效期限：2019-10-01</view>
+                  <view class="bottom">立即使用</view>
+              </view>
+              <image class="ico1" src="../../img/ico18.png" mode="widthFix"></image>
+          </view>
+     </view>
+     <view class="item">
+           <view class="item">
+              <view class="left">
+                  <view class="top">满1000减120</view>
+                  <view class="bottom">优惠卷</view>
+              </view>
+              <view class="right">
+                  <view class="top">全场通用红包</view>
+                  <view class="middle">有效期限：2019-10-01</view>
+                  <view class="bottom">立即使用</view>
+              </view>
+              <image class="ico1" src="../../img/ico18.png" mode="widthFix"></image>
+          </view>
+     </view>
+</view>

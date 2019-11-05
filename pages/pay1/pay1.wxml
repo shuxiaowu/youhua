@@ -1,0 +1,29 @@
+<image src="/img/pay.png" mode="widthFix"></image>
+<view class="title">支付成功</view>
+<view class="list">
+    <view class="item">
+         <view class="left">竞拍物品：</view>
+         <view class="right">张洪琛《秋色高原》</view>
+    </view>
+    <view class="item">
+         <view class="left">保证金：</view>
+         <view class="right">￥400.00</view>
+    </view>
+    <view class="item">
+         <view class="left">竞拍方式：</view>
+         <view class="right">竞拍</view>
+    </view>
+    <view class="item">
+         <view class="left">竞拍金额：</view>
+         <view class="right">￥4000.00</view>
+    </view>
+    <view class="item">
+         <view class="left">竞拍时间：</view>
+         <view class="right">2019-09-24 14:30:26</view>
+    </view>
+    <view class="item">
+         <view class="left">订单号：</view>
+         <view class="right">1589561258992313525326</view>
+    </view>
+</view>
+<view class="btn">订单详情</view>

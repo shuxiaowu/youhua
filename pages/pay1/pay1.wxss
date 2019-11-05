@@ -1,0 +1,38 @@
+image{
+width: 247rpx;
+height: 208rpx;
+margin:87rpx auto 0;
+display:block;
+}
+.title{
+color: #333333;
+font-size:40rpx;
+text-align:center;
+margin-top:60rpx;
+}
+.list{
+margin-top:113rpx;
+margin-left:126rpx;
+}
+.list .item{
+display:flex;
+font-size:28rpx;
+color:#000;
+margin-bottom:30rpx;
+}
+.list .item .left{
+width:180rpx;
+color:#666;
+}
+.btn{
+width: 561rpx;
+height: 107rpx;
+background-color: #464646;
+border-radius: 54rpx;
+text-align:center;
+line-height:107rpx;
+color:#fff;
+font-size:32rpx;
+font-weight:bold;
+margin:100rpx auto 0;
+}

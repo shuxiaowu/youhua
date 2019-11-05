@@ -1,0 +1,84 @@
+<view class="header">
+     <view class="top">等待卖家发货</view>
+     <view class="bottom">耐心等待哦...</view>
+     <image class="bg" src="../../img/ico28.png" mode="widthFix"></image>
+</view>
+<view class="site">
+    <view class="content">
+        <view class="con">
+            <view class="top">
+                 <image class="ico" src="../../img/ico27.png" mode="widthFix"></image>
+                 <view class="name">一佳佳</view>
+                 <view class="phone">181****5698</view>
+            </view>
+            <view class="bottom">
+                地址：江西省南昌市青山湖区艾溪湖管理处巅峰财富广场B座1406
+            </view>
+        </view>
+       
+    </view>
+</view>
+<view class="product">
+    <view class="picture">
+        <image src="../../img/ico17.png" mode="widthFix"></image>
+    </view>
+    <view class="label">
+        <view class="top">古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽</view>
+        <view class="bottom">
+             <view class="left">￥7200.00</view>
+             <view class="right">X1</view>
+        </view>
+    </view>
+</view>
+<view class="title">金额明细</view>
+<view class="list">
+     <view class="item">
+          <view class="left">竞拍时间：</view>
+          <view class="right">2019-09-26 14:25:36</view>
+     </view>
+      <view class="item">
+          <view class="left">竞拍方式：</view>
+          <view class="right">竞拍</view>
+     </view>
+      <view class="item">
+          <view class="left">订单号：</view>
+          <view class="right">158961256265621589962124584</view>
+     </view>
+      <view class="item">
+          <view class="left">付款时间：</view>
+          <view class="right">2019-09-29 14:35:12</view>
+     </view>
+      <view class="item">
+          <view class="left">订单总价：</view>
+          <view class="right">￥7920.00</view>
+     </view>
+      <view class="item">
+          <view class="left">保证金：</view>
+          <view class="right">￥720.00</view>
+     </view>
+      <view class="item">
+          <view class="left">佣金：</view>
+          <view class="right">￥720.00</view>
+     </view>
+      <view class="item">
+          <view class="left">运费：</view>
+          <view class="right">￥0.00</view>
+     </view>
+      <view class="item">
+          <view class="left">优惠卷：</view>
+          <view class="right">未使用优惠卷</view>
+     </view>
+      <view class="item">
+          <view class="left">保证金抵扣：</view>
+          <view class="right">未抵扣</view>
+     </view>
+      <view class="item">
+          <view class="left">实付尾款：</view>
+          <view class="right">￥7920.00</view>
+     </view>
+</view>
+
+<view class="btn_box">
+    <view class="btn">联系商家</view>
+    <navigator url="../logistics/logistics" class="btn">查看物流</navigator>
+</view>

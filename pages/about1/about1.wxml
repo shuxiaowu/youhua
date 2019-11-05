@@ -1,0 +1,89 @@
+<view class='header'>
+</view>
+<view class="user_box">
+     <view class="user">
+        <view class="left">
+            <view class="name">一佳同学</view>
+            <navigator url="../pim/pim" class="p">设置个人信息   <icon class="iconfont icon-you"></icon></navigator>
+        </view>
+        <view class="right">
+            <image src="../../img/ico14.png" mode="widthFix"></image>
+        </view>
+    </view>
+</view>
+<view class="order">
+    <navigator url="../order/order?onpage=1" class="item">
+        <image src="../../img/ico2.png"></image>
+        <view class="p">待付款</view>
+    </navigator>
+    <navigator url="../order/order?onpage=2" class="item">
+        <image src="../../img/ico3.png"></image>
+        <view class="p">待发货</view>
+    </navigator>
+    <navigator url="../order/order?onpage=3" class="item">
+        <image src="../../img/ico4.png"></image>
+        <view class="p">待收货</view>
+    </navigator>
+    <navigator url="../order/order" class="item">
+        <image src="../../img/ico5.png"></image>
+        <view class="p">全部订单</view>
+    </navigator>
+</view>
+<view class="nav">
+    <navigator url="../burse/burse" class="item">
+         <image src="../../img/ico6.png"></image>
+         <view class="p">钱包余额</view>
+    </navigator>
+    <navigator url="../record/record" class="item">
+         <image src="../../img/ico7.png"></image>
+         <view class="p">参拍记录</view>
+    </navigator>
+    <navigator url="../coupon/coupon" class="item">
+         <image src="../../img/ico8.png"></image>
+         <view class="p">优惠卷</view>
+    </navigator>
+</view>
+<view class="list">
+    <navigator url="../collect/collect" class="item">
+        <image src="../../img/ico9.png"></image>
+        <text>我的收藏</text>
+        <icon class="iconfont icon-you"></icon>
+    </navigator>
+    <view class="item" bindtap="call_click">
+        <image src="../../img/ico10.png"></image>
+        <text>联系我们</text>
+        <view class="phone">400-1589-125</view>
+        <icon class="iconfont icon-you"></icon>
+    </view>
+    <navigator url="../us/us" class="item">
+        <image src="../../img/ico11.png"></image>
+        <text>关于我们</text>
+        <icon class="iconfont icon-you"></icon>
+    </navigator>
+    <navigator url="../help/help" class="item">
+        <image src="../../img/ico12.png"></image>
+        <text>帮助中心</text>
+        <icon class="iconfont icon-you"></icon>
+    </navigator>
+    <navigator url="../set/set" class="item">
+        <image src="../../img/ico13.png"></image>
+        <text>设置</text>
+        <icon class="iconfont icon-you"></icon>
+    </navigator>
+</view>
+<view class="shade" wx:if="{{call}}"></view>
+
+<view class="call" wx:if="{{call}}">
+    <view class="call_box">
+         <view class="top">
+              <view class="p1">联系我们</view>
+              <view class="p2">400-1589-125</view>
+         </view>
+         <view class="bottom">
+              <view class="btn" bindtap="cancel">取消</view>
+              <view class="btn btn1" bindtap="tel">呼叫</view>
+         </view>
+    </view>
+</view>
+
+

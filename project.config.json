@@ -1,0 +1,293 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wx2817139a267be9a0",
+	"projectname": "%E6%B2%B9%E7%94%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 34,
+			"list": [
+				{
+					"id": 0,
+					"name": "我的-未登入版",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "我的登入版",
+					"pathName": "pages/about1/about1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "关于我们  详情",
+					"pathName": "pages/us/us",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "帮助中心",
+					"pathName": "pages/help/help",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "设置",
+					"pathName": "pages/set/set",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "参拍记录",
+					"pathName": "pages/record/record",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "优惠券",
+					"pathName": "pages/coupon/coupon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "收藏",
+					"pathName": "pages/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "钱包",
+					"pathName": "pages/burse/burse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "充值",
+					"pathName": "pages/topup/topup",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "变现",
+					"pathName": "pages/topup1/topup1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "提现-未添加银行卡",
+					"pathName": "pages/topup2/topup2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "地址管理",
+					"pathName": "pages/site/site",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加地址",
+					"pathName": "pages/site1/site1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "编辑地址",
+					"pathName": "pages/site2/site2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人信息管理",
+					"pathName": "pages/pim/pim",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "我的订单",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 17,
+					"name": "待付款订单详情",
+					"pathName": "pages/order1/order1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "待发货订单详情",
+					"pathName": "pages/order2/order2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "待发货物流信息",
+					"pathName": "pages/logistics/logistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "待收货订单详情",
+					"pathName": "pages/order3/order3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 21,
+					"name": "支付成功",
+					"pathName": "pages/pay/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "已完成订单详情",
+					"pathName": "pages/order4/order4",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "已失效订单详情",
+					"pathName": "pages/order5/order5",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情优惠券",
+					"pathName": "pages/coupon1/coupon1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "待发货物流信息",
+					"pathName": "pages/logistics/logistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "待收货物流信息",
+					"pathName": "pages/logistics1/logistics1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": " 首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拍品详情",
+					"pathName": "pages/items/items",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "海报",
+					"pathName": "pages/poster/poster",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "竞拍保证金支付成功",
+					"pathName": "pages/pay1/pay1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "专场介绍",
+					"pathName": "pages/activity/activity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 32,
+					"name": "热门拍品",
+					"pathName": "pages/product/product",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动专场",
+					"pathName": "pages/active/active",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "开屏首页",
+					"pathName": "pages/index1/index1",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

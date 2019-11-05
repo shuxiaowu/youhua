@@ -1,0 +1,58 @@
+page{
+background:#f2f2f2;
+}
+.user{
+height:112rpx;
+padding:0 30rpx;
+box-sizing:border-box;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+margin-top:10rpx;
+border-bottom:1rpx solid #e1e1e1;
+}
+.user .left{
+color: #333333;
+font-size:32rpx;
+}
+.user .right{
+display:flex;
+align-items:center;
+}
+.user .right .head{
+width:65rpx;
+height:66rpx;
+overflow:hidden;
+display:flex;
+align-items:center;
+border-radius:100%;
+margin-right:20rpx;
+}
+.user .iconfont{
+color: #666666;
+font-size:32rpx;
+}
+.user1{
+display:flex;
+justify-content:space-between;
+height:106rpx;
+align-items:center;
+background:#fff;
+border-bottom:1rpx solid #e1e1e1;
+padding:0 30rpx;
+box-sizing:border-box;
+color: #333333;
+font-size:32rpx;
+}
+.pohne{
+border:none;
+}
+.site{
+border:none;
+margin-top:14px;
+height:117rpx;
+}
+.site .iconfont{
+color:#666;
+}

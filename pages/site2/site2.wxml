@@ -1,0 +1,38 @@
+<view class="list">
+    <view class="item">
+          <view class="title">收货人</view>
+          <input  placeholder-style="color:#999;" value="请填写收货人的姓名"></input>
+    </view>
+    <view class="item">
+          <view class="title">手机号码</view>
+          <input  value="请填写收货人手机号"></input>
+    </view>
+    <view class="item">
+          <view class="title">所在地区</view>
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">
+             {{region[0]}} {{region[1]}} {{region[2]}}
+            </view>
+          </picker>
+    </view>
+    <view class="item">
+          <view class="title">详细地址</view>
+          <input placeholder="乡镇街道等" bindfocus="focus" value="乡镇街道"></input>
+    </view>
+</view>
+<view class="default">
+     <view class="left">
+          <view class="top">
+              设置默认地址
+          </view>
+          <view class="bottom">
+              每次下单会默认推荐使用该地址
+          </view>
+     </view>
+     <view class="right"><image src="{{on==0?'../../img/ico24.png':'../../img/ico25.png'}}" mode="widthFix" bindtap="default_click"></image></view>
+</view>
+<view class="del">
+     删除该地址
+</view>
+<navigator url="../site/site" class="{{ig==0?'btn':'btn btn_active'}}">保存</navigator>
+

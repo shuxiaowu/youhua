@@ -1,0 +1,206 @@
+<view class="list">
+     <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                        <view class="left">成交价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        <view class="right">交易进行中</view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">竞拍成功</view>
+               <view class="right">2019-09-26</view>
+           </view>
+     </view>
+      <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                        <view class="left">成交价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        <view class="right"></view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">交易已完成</view>
+               <view class="right">2019-09-26</view>
+           </view>
+          
+     </view>
+      <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                        <view class="left">成交价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        <view class="right"></view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">交易已失效</view>
+               <view class="right">2019-09-26</view>
+           </view>
+           <image class="ico" src="../../img/ico16.png" mode="widthFix"></image>
+      </view>
+      <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                        <view class="left"> 
+                             <view class="l1"> 成交价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                             <view class="l2"> 竞拍价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        </view>
+                        <view class="right"></view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">拍品流拍</view>
+               <view class="right">2019-09-26</view>
+           </view>
+      </view>
+      <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                        <view class="left"> 
+                             <view class="l1"> 成交价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                             <view class="l2"> 竞拍价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        </view>
+                        <view class="right"></view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">竞拍失败</view>
+               <view class="right">2019-09-26</view>
+           </view>
+      </view>
+      <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                        <view class="left">
+                            <view class="l1"> 成交价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                            <view class="l2"> 委托价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        </view>
+                        <view class="right"></view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">委托竞拍失败</view>
+               <view class="right">2019-09-26</view>
+           </view>
+      </view>
+      <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                         <view class="left">
+                            <view class="l1"> 竞拍价：<text class="price"> <icon>¥</icon>7200.00【当前价】</text></view>
+                            <view class="l2"> 当前价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        </view>
+                        <view class="right"></view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">竞拍中</view>
+               <view class="right">2019-09-26</view>
+           </view>
+      </view>
+      <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                         <view class="left">
+                            <view class="l1"> 竞拍价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                            <view class="l2"> 当前价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        </view>
+                        <view class="right">去加价 <icon class="iconfont icon-you"></icon> </view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">竞拍中</view>
+               <view class="right">2019-09-26</view>
+           </view>
+      </view>
+      <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                         <view class="left">
+                            <view class="l1"> 首次竞价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                            <view class="l2"> 二次竞价：<text class="price"> <icon>¥</icon>7200.00 【当前价】</text></view>
+                            <view class="l2"> 当前价：<text class="price"> <icon>¥</icon>7200.00 </text></view>
+                        </view>
+                        <view class="right"></view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">竞拍中</view>
+               <view class="right">2019-09-26</view>
+           </view>
+      </view>
+       <view class="item">
+          <view class="top">
+               <view class="picture"><image src="../../img/ico17.png" mode="widthFix"></image></view>
+               <view class="content">
+                    <view class="label1">
+                        古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽
+                    </view>
+                    <view class="label2">
+                        <view class="left">
+                             <view class="l1"> 委托价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                             <view class="l2"> 当前价：<text class="price"> <icon>¥</icon>7200.00</text></view>
+                        </view>
+                        <view class="right"></view>
+                    </view>
+               </view>
+           </view>
+           <view class="bottom">
+               <view class="left">委托竞拍中</view>
+               <view class="right">2019-09-26</view>
+           </view>
+      </view>
+</view>

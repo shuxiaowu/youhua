@@ -1,0 +1,25 @@
+<view class="site0" wx:if="{{site0}}">
+     <image src="../../img/ico22.png" mode="widthFix"></image>
+     <view class="p">暂无收货地址</view>
+</view>
+<navigator url="../site1/site1" class="btn">
+     <view class="iconfont icon-changyongtubiao-mianxing-"></view>
+     <view class="p">添加地址</view>
+</navigator>
+<view class="list">
+     <block wx:for="{{site_list}}" wx:for-item="item">
+        <view class="item">
+              <view class="con">
+                  <view class="top">
+                      <view class="name">{{item.name}}</view>
+                      <view class="phone">{{item.phone}}</view>
+                      <view class="{{item.de==1?'default d_active':'default'}}">默认</view>
+                  </view>
+                  <view class="bottom">
+                      {{item.site}}
+                  </view>
+              </view>
+              <navigator url="{{item.url}}" class="iconfont icon-icon-edit"></navigator>
+        </view>
+     </block>
+</view>

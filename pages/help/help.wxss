@@ -1,0 +1,22 @@
+.content{
+padding:0 24rpx;
+box-sizing:border-box;
+margin-top:41rpx;
+}
+.content .item{
+margin-bottom:88rpx;
+}
+.content .item .title{
+color: #333333;
+font-size:32rpx;
+font-weight:bold;
+border-left:4rpx solid  #ff3a3a;
+padding-left:24rpx;
+box-sizing:border-box;
+margin-bottom:32rpx;
+}
+.content .item .p{
+color: #484848;
+font-size:26rpx;
+line-height:44rpx;
+}

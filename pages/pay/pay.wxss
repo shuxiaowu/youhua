@@ -1,0 +1,24 @@
+image{
+width:247rpx;
+height:208rpx;
+margin:237rpx auto 0;
+display:block;
+}
+.p{
+color: #333333;
+font-size:40rpx;
+text-align:center;
+margin-top:61rpx;
+font-weight:bold;
+}
+.btn{
+width: 561rpx;
+height: 107rpx;
+background-color: #464646;
+border-radius: 54rpx;
+text-align:center;
+line-height:107rpx;
+color:#fff;
+font-size:32rpx;
+margin:204rpx auto 0;
+}

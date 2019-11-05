@@ -1,0 +1,46 @@
+<view class="content">
+     <view class="time">
+         <view class="item active">
+             09-26
+             12:05
+         </view>
+         <view class="item">
+             09-26
+             12:05
+         </view>
+         <view class="item">
+             09-26
+             12:05
+         </view>
+         <view class="item">
+             09-26
+             12:05
+         </view>
+     </view>
+     <image src="../../img/ico35.png" mode="widthFix"></image>
+     <view class="con">
+          <view class="item">
+              【收货地址】江西省南昌市青山湖区高新 大道巅峰财富广场B座1406
+          </view>
+          <view class="item">
+              <view class="p">已签收</view>
+              <view class="p">【南昌市】您的快件已达到,请尽快取件</view>
+          </view>
+          <view class="item">
+              <view class="p">
+                  运输中
+              </view>
+              <view class="p">
+                【南昌市】已离开南昌分拨中心，发往
+                南昌艾溪湖管理处
+              </view>
+          </view>
+          <view class="item">
+               【南昌市】已达到南昌市分拨中心
+          </view>
+          <view class="item">
+              <view class="p"> 已发货</view>
+              <view class="p"> 商品已出库</view>
+          </view>
+     </view>
+</view>

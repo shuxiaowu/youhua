@@ -1,0 +1,21 @@
+<view class="user">
+    <view class="left">
+         头像
+    </view>
+    <view class="right">
+         <view class="head"><image src="../../img/ico14.png" mode="widthFix"></image></view>
+         <view class="iconfont icon-you"></view>
+    </view>
+</view>
+<view class="user1">
+    <view class="left">昵称</view>
+    <view class="right">一佳同学</view>
+</view>
+<view class="user1 phone">
+    <view class="left">手机号</view>
+    <view class="right">18174013028</view>
+</view>
+<navigator url="../site/site" class="user1 site">
+    <view class="left">地址管理</view>
+    <view class="right iconfont icon-you"></view>
+</navigator>

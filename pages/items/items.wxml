@@ -1,0 +1,294 @@
+<view class="banner">
+    <swiper autoplay="true" interval="3000" duration="1000" circular="true" >
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src='{{item}}' mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="label">
+         <view class="left">距结拍</view>
+         <view class="right">
+               <view class="num">2</view>天<view class="num">1</view> <view class="num">4</view>时 <view class="num">2</view> <view class="num">6</view>分                 <view class="num">4</view> <view class="num">4</view>秒
+        </view>
+    </view>
+</view>
+<view class="con1">
+    <view class="title">
+        <view class="name"><text>续鹤贤</text>《瑶山劲舞》</view>
+        <view class="ico1 iconfont {{on==0?'icon-shoucang':'icon-hongxin'}}" bindtap="switcher"></view>
+        <view class="ico2 iconfont icon-fenxiang" bindtap="share"></view>
+    </view>
+    <view class="price">
+         <view class="item">
+             <view class="top">当前价(元）</view>
+             <view class="bottom">5000.00</view>
+         </view>
+         <view class="item">
+             <view class="top">起拍价(元）</view>
+             <view class="bottom">5000.00</view>
+         </view>
+         <view class="item">
+             <view class="top">阶梯价(元）</view>
+             <view class="bottom">5000.00</view>
+         </view>
+    </view>
+    <view class="label2">
+                  <view class="left">佣</view>
+                  <view class="right">8%</view>
+              </view>
+    <view class="label2 label3">
+        <view class="left">阶</view>
+        <view class="right" bindtap="explain">固定</view>
+    </view>
+</view>
+<view class="con2">
+    <view class="item">
+          <view class="left">材质</view>
+          <view class="right">纸本油画</view>
+    </view>
+    <view class="item">
+          <view class="left">尺寸</view>
+          <view class="right">170cm X 130cm</view>
+    </view>
+    <view class="item">
+          <view class="left">年份</view>
+          <view class="right">2019年</view>
+    </view>
+    <view class="item">
+          <view class="left">说明</view>
+          <view class="right">
+                李白（ 701年2月8日-762年） ，字太白，号青莲居士。中国唐朝诗人，有“诗仙” ， “诗侠”之称。有《李太白集》传世，诗作中多以醉时写的
+          </view>
+    </view>
+</view>
+<view class="con3">
+    <view class="h1">作者简介</view>
+    <view class="p1">
+         李白（ 701年2月8日-762年） ，字太白，号青莲居士。中国唐朝诗人，有“诗仙” ， “诗侠”之称。有《李太白集》传世，诗作中多以醉时写的，代表作有《望庐山瀑布》、《行路难》、《蜀道难》、《将进酒》、《梁甫吟》、《早发白帝城》等多首。 生平概述 李白（701年2月8日—762年12月） ， 字太白 ，号青莲居士 ，汉族!
+    </view>
+</view>
+<view class="con4">
+     <view class="h1" bindtap="show_click">
+         <view class="name">竞拍记录</view>
+         <view class="iconfont {{on1==0?'icon-changyongtubiao-xianxingdaochu-zhuanqu-':'icon-changyongtubiao-xianxingdaochu-zhuanqu-1'}}"></view>
+     </view>
+     <view class="list" wx:if="{{record}}">
+         <view class="item title" wx:if="{{record_title}}">
+              <view class="left">竞拍人</view>
+              <view class="middle">参拍价</view>
+              <view class="bottom">参拍时间</view>
+         </view>
+         <block wx:for="{{record_list}}">
+              <view class="item">
+                    <view class="left">{{item.phone}}</view>
+                    <view class="middle">
+                          {{item.price}}{{item.label}}<text class="my" >{{item.label1}}</text>
+                    </view>
+                    <view class="right">
+                          {{item.time}}
+                    </view>
+              </view>
+         </block>
+         <view class="item0" wx:if="{{record0}}">
+              <image src="/img/jl0.png" mode="widthFix"></image>
+              <view class="p">暂无记录</view>
+         </view>
+     </view>
+</view>
+<view class="con5" wx:if="{{con5}}">
+    <view class="h1">其他拍品</view>
+    <view class="product">
+        <block wx:for="{{product}}">
+            <view class="item">
+                <navigator class="picture" url="{{item.url}}">
+                    <image src="{{item.src}}" mode="widthFix"></image>
+                </navigator>
+                <view class="name">{{item.name}}</view>
+                <view class="price"> <text>{{item.label}}</text>￥{{item.price}}</view>
+                <view class="time">
+                    <view class="left">{{item.time}}结拍</view>
+                    <view class="right iconfont {{item.ig==0?'icon-shoucang':'icon-hongxin'}}" bindtap="sc_click" data-on="{{item.id}}"></view>
+                </view>
+            </view>
+        </block>
+   </view>
+</view>
+<view class="btn_box" wx:if="{{btn_box}}">
+    <view class="btn" bindtap="pop3_click">
+         委托竞拍
+    </view>
+    <view class="btn" bindtap="pop1_click">
+         竞拍
+    </view>
+</view>
+<view class="shade" wx:if="{{shade}}"></view>
+<view class="share" wx:if="{{share}}">
+     <view class="share_list" >
+         <navigator url="../poster/poster" class="item">
+              <image src="/img/share1.png" mode="widthFix"></image>
+              <view class="title">微信</view>
+         </navigator>
+          <navigator url="../poster/poster" class="item">
+              <image src="/img/share2.png" mode="widthFix"></image>
+              <view class="title">朋友圈</view>
+         </navigator>
+          <view class="item" bindtap="hb_click">
+              <image src="/img/share3.png" mode="widthFix"></image>
+              <view class="title">生成海报</view>
+         </view>
+     </view>
+     <view class="cancel" bindtap="cancel">取消</view>
+</view>
+<view class="poster" wx:if="{{poster}}">
+    <image src="/img/hb1.png" mode="widthFix"></image>
+    <view class="bottom">
+         <view class="btn left" bindtap="hb_cancel">取消</view>
+         <view class="btn right">保存</view>
+    </view>
+</view>
+<!--未开拍弹窗提示-->
+<view class="pop" wx:if="{{pop}}">
+    <view class="p">该拍品还未到开拍时间，请耐心等待或查看其他拍品</view>
+    <view class="btn" bindtap="pop_cancel">我知道了</view>
+</view>
+<!--竞拍弹窗-->
+<view class="pop1" wx:if="{{pop1}}">
+    <view class="h1">竞拍</view>
+    <view class="price_list">
+         <view class="item">
+             <view class="top">竞拍价</view>
+             <view class="bottom"><text>￥</text>2200.00</view>
+         </view>
+         <view class="item">
+             <view class="top">保证金</view>
+             <view class="bottom"><text>￥</text>220.00</view>
+         </view>
+         <view class="item">
+             <view class="top">比率</view>
+             <view class="bottom">10%</view>
+         </view>
+    </view>
+    <view class="bidding">
+         <view class="left">竞价阶梯</view>
+         <view class="right">
+              <view class="sub"  bindtap="sub">-</view>
+              <view class="num">{{num}}</view>
+              <view class="add" bindtap="add">+</view>
+         </view>
+    </view>
+    <view class="p">拍卖结束后，若竞拍成功，则保证金可抵扣支付总金额；若竞拍失败，则保证金退还至账户余额。</view>
+    <view class="btn_box1">
+         <view class="btn" bindtap="pop1_cancel">取消</view>
+         <view class="btn btn1" bindtap="pay_click">缴纳保证金</view>
+    </view>
+</view>
+<!--竞拍阶梯价已达最低时提示重新设置竞拍阶梯价-->
+<view class="shade1" wx:if="{{shade1}}"></view>
+<view class="pop2" wx:if="{{pop2}}">
+     <view class="h1">数据错误</view>
+     <view class="p1">竞拍阶梯价已达最低，请重新设置竞拍阶梯价</view>
+     <view class="btn" bindtap="pop2_cancel"> 重新设置</view>
+</view>
+<view class="pop2" wx:if="{{pop4}}">
+     <view class="h1">数据错误</view>
+     <view class="p1">您输入的金额小于当前价，且不符合阶梯竞价规定，请重新设置委托拍卖价格。</view>
+     <view class="btn" bindtap="pop21_cancel"> 重新设置</view>
+</view>
+<!--支付弹窗-->
+<view class="pay_pop" wx:if="{{pay_pop}}">
+    <view class="title">
+         <view class="cancel iconfont icon-fork" bindtap="pay_cancel"></view>
+         保证金充值
+    </view>
+    <view class="price">￥400.00</view>
+    <view class="pay_list">
+        <view class="item item1">
+              <image class="ico" src="../../img/ico29.png" mode="widthFix"></image>
+             <view class="text">微信支付</view>
+             <image class="ico1" src="../../img/ico15.png" mode="widthFix"></image>
+        </view>
+        <view class="item">
+             <image class="ico" src="../../img/ico30.png" mode="widthFix"></image>
+             <view class="text text1">余额支付（余额不足）</view>
+        </view>
+    </view>
+    <view class="p1">
+          <image class="ico" src="/img/ico36.png" mode="widthFix"></image>
+          <view class="p2">拍卖前需要同意 <text>【竞拍协议】</text></view>
+    </view>
+    <navigator url="../pay1/pay1" class="btn">确定支付</navigator>
+</view>
+
+<view class="pay_pop" wx:if="{{pay_pop1}}">
+    <view class="title">
+         <view class="cancel iconfont icon-fork" bindtap="pay1_cancel"></view>
+         保证金充值
+    </view>
+    <view class="price">￥400.00</view>
+    <view class="pay_list">
+        <view class="item item1">
+              <image class="ico" src="../../img/ico29.png" mode="widthFix"></image>
+             <view class="text">微信支付</view>
+             <image class="ico1" src="../../img/ico15.png" mode="widthFix"></image>
+        </view>
+        <view class="item">
+             <image class="ico" src="../../img/ico30.png" mode="widthFix"></image>
+             <view class="text text1">余额支付（余额不足）</view>
+        </view>
+    </view>
+    <view class="p1">
+          <image class="ico" src="/img/ico36.png" mode="widthFix"></image>
+          <view class="p2">拍卖前需要同意 <text>【竞拍协议】</text></view>
+    </view>
+    <navigator url="../pay1/pay1" class="btn">确定支付</navigator>
+</view>
+
+<view class="pop1 pop3" wx:if="{{pop3}}">
+    <view class="h1">竞拍</view>
+    <view class="price_list">
+         <view class="item">
+             <view class="top">竞拍价</view>
+             <view class="bottom"><text>￥</text>2200.00</view>
+         </view>
+         <view class="item">
+             <view class="top">保证金</view>
+             <view class="bottom"><text>￥</text>220.00</view>
+         </view>
+         <view class="item">
+             <view class="top">比率</view>
+             <view class="bottom">10%</view>
+         </view>
+    </view>
+   <input  placeholder="输入委托竞拍最高价" placeholder-class="inp_place"  bindinput="getInput"></input>
+    <view class="p">拍卖结束后，若竞拍成功，则保证金可抵扣支付总金额；若竞拍失败，则保证金退还至账户余额。</view>
+    <view class="btn_box1">
+         <view class="btn" bindtap="pop3_cancel">取消</view>
+         <view class="btn btn1" bindtap="pay1_click">缴纳保证金</view>
+    </view>
+</view>
+<view class="explain" wx:if="{{explain}}">
+     <view class="content">
+          <view class="h1">保证金说明</view>
+          <view class="p1">
+                <view class="p">保证金是指用于核算存入银行等金融机构各种保证金性质的存款。</view>  
+                <view class="p">
+                在法律对于保证金缺乏明确规范的背景下，探讨保证金的类型，对于备用金类型的保证金、预付款类型的保证金、租赁保证金、装修保证金、定金类型的保证金、           保有返还请求权的保证金、无双倍返还效力的保证金分别界定，确定各自的法律效力，十分必要。</view>
+                <view class="p">在证券市场融资购买证券时，投资者所需缴纳的自备款。交易保证金是指交易商规定客户入市买入或卖出黄金时，即开盘买卖时客户账户所必须具有的保证金。开户保证金是指交易商规定客户在开设外汇保证金交易账户时，必须交纳的最低存款金额。</view> 
+          </view>
+     </view>
+     <view class="btn" bindtap="know">知道了</view>
+</view>
+<view class="finish" wx:if="{{finish}}">已结束</view>
+<!--未登入状态提示框-->
+<view class="login" wx:if="{{login}}">
+     <view class="content">
+           <view class="h1">您还未登录</view>
+           <view class="h2">请先登录在进行操作</view>
+           <image src="/img/login.png" mode="widthFix"></image>
+           <view class="login_btn">
+                <view class="btn left" bindtap="login_cancel">再用用看</view>
+                <view class="btn right" bindtap="go_login">现在登录</view>
+           </view>
+     </view>
+</view>

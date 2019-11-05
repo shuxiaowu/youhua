@@ -1,0 +1,40 @@
+<view class="nav">
+     <view class="{{onpage==0?'item active':'item'}}" data-on="0" bindtap="nav_click">全部</view>
+     <view class="{{onpage==1?'item active':'item'}}" data-on="1" bindtap="nav_click">待付款</view>
+     <view class="{{onpage==2?'item active':'item'}}" data-on="2" bindtap="nav_click">待发货</view>
+     <view class="{{onpage==3?'item active':'item'}}" data-on="3" bindtap="nav_click">待收货</view>
+     <view class="{{onpage==4?'item active':'item'}}" data-on="4" bindtap="nav_click">已完成</view>
+</view>
+<view class="order0" wx:if="{{order0}}">
+    <image src="../../img/order0.png" mode="widthFix"></image>
+    <view class="p">您还没有相关订单</view>
+</view>
+<view class="list">
+     <block wx:for="{{order_list}}" wx:for-item="item">
+          <view class="item" wx:if="{{item.id==onpage||onpage==0}}">
+                <view class="title">
+                    <view class="left">{{item.title1}}</view>
+                    <view class="{{item.lose==0?'right':'title_active'}}">{{item.title2}}</view>
+                </view>
+                <navigator url="{{item.moreUrl}}" class="con">
+                    <view class="picture"><image src="{{item.src}}" mode="widthFix"></image></view>
+                    <view class="label">
+                        <view class="top">{{item.label}}</view>
+                        <view class="bottom">
+                            <view class="left">￥{{item.price}}</view>
+                            <view class="right">X{{item.num}}</view>
+                        </view>
+                    </view>
+                </navigator>
+                <view class="price">共{{item.num}}件商品，总金额 <text>¥{{item.total}}</text></view>
+                <view class="btn_box">
+                      <view class="btn" wx:if="{{item.contact}}">{{item.contact}}</view>
+                      <navigator url="../order1/order1" class="btn" wx:if="{{item.pay}}">{{item.pay}}</navigator>
+                      <view class="btn" wx:if="{{item.del}}">{{item.del}}</view>
+                      <navigator url="{{item.lookUrl}}" class="btn" wx:if="{{item.look}}">{{item.look}}</navigator>
+                      <view class="btn" wx:if="{{item.affirm}}">{{item.affirm}}</view>
+                </view>
+                <image class="ico" src="{{item.ico}}" mode="widthFix"></image>
+          </view>
+    </block>
+</view>

@@ -1,0 +1,109 @@
+<view class="header">
+     <view class="top">订单待付款</view>
+     <view class="middle">请在规定时间内完成付款，逾期将失效！</view>
+     <view class="bottom">剩2天16时29分失效</view>
+     <image class="bg" src="../../img/ico26.png" mode="widthFix"></image>
+</view>
+<view class="site">
+    <view class="add" wx:if="{{addSite}}" bindtap="addSite">
+         <text class="ico">+</text> 请添加收货人信息
+    </view>
+    <view class="content" wx:if="{{content}}">
+        <view class="con">
+            <view class="top">
+                 <image class="ico" src="../../img/ico27.png" mode="widthFix"></image>
+                 <view class="name">一佳佳</view>
+                 <view class="phone">181****5698</view>
+            </view>
+            <view class="bottom">
+                地址：江西省南昌市青山湖区艾溪湖管理处巅峰财富广场B座1406
+            </view>
+        </view>
+        <view class="iconfont icon-you"></view>
+    </view>
+</view>
+<view class="product">
+    <view class="picture">
+        <image src="../../img/ico17.png" mode="widthFix"></image>
+    </view>
+    <view class="label">
+        <view class="top">古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽</view>
+        <view class="bottom">
+             <view class="left">￥7200.00</view>
+             <view class="right">X1</view>
+        </view>
+    </view>
+</view>
+<view class="title">金额明细</view>
+<view class="price_list">
+     <view class="item">
+          <view class="left">拍品价：</view>
+          <view class="right">¥7200.00</view>
+     </view>
+     <view class="item">
+          <view class="left">保证金：</view>
+          <view class="right">¥720.00</view>
+     </view>
+     <view class="item">
+          <view class="left">佣金：</view>
+          <view class="right">¥720.00</view>
+     </view>
+     <view class="item item_last">
+          <view class="left">运费：</view>
+          <view class="right">¥0.00</view>
+     </view>
+</view>
+<view class="yhq">
+     <view class="left">优惠卷</view>
+     <navigator url="../coupon1/coupon1" class="right">
+          <text>暂无优惠卷</text>
+          <icon class="iconfont icon-you"></icon>
+     </navigator>
+</view>
+<view class="bzj">
+    <view class="con">
+        <view class="top">保证金抵扣</view>
+        <view class="bottom">全额付保证金将退还至钱包余额</view>
+    </view>
+    <view class="{{box==1?'box iconfont icon-dagou':'box'}}" bindtap="box_click"></view>
+</view>
+<view class="title">订单信息</view>
+<view class="list">
+     <view class="item">
+         <view class="left">竞拍时间：</view>
+         <view class="right">2019-09-26 14:25:36</view>
+     </view>
+     <view class="item">
+         <view class="left">竞拍方式：</view>
+         <view class="right">竞拍</view>
+     </view>
+     <view class="item">
+         <view class="left">订单号：</view>
+         <view class="right">158961256265621589962124584</view>
+     </view>
+</view>
+<view class="pay">
+    <view class="left">待付款：<text> ¥7920.00</text></view>
+    <view class="right" bindtap="pay">确认支付</view>
+</view>
+<view class="shade" wx:if="{{pay_pop}}"></view>
+<view class="pay_pop" wx:if="{{pay_pop}}">
+    <view class="title">
+         <view class="cancel iconfont icon-fork" bindtap="cancel"></view>
+         订单支付
+    </view>
+    <view class="price">￥7920.00</view>
+    <view class="pay_list">
+        <view class="item item1">
+              <image class="ico" src="../../img/ico29.png" mode="widthFix"></image>
+             <view class="text">微信支付</view>
+             <image class="ico1" src="../../img/ico15.png" mode="widthFix"></image>
+        </view>
+        <view class="item">
+             <image class="ico" src="../../img/ico30.png" mode="widthFix"></image>
+             <view class="text text1">余额支付（余额不足）</view>
+        </view>
+    </view>
+    <navigator url="../pay/pay" class="btn">确定支付</navigator>
+</view>
+

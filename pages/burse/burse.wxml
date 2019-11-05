@@ -1,0 +1,77 @@
+<view class="header"></view>
+<view class="money">
+     <view class="item left">
+          <view class="top">
+               总余额
+          </view>
+          <view class="bottom">
+               ￥600.00
+          </view>
+     </view>
+     <view class="item">
+          <view class="top">
+               保证金占用
+          </view>
+          <view class="bottom">
+               ￥400.00
+          </view>
+     </view>
+</view>
+<view class="nav">
+      <navigator url="../topup/topup" class="item1">
+           充值
+      </navigator>
+      <navigator url="../topup1/topup1" class="item2">
+           提现
+      </navigator>
+</view>
+<view class="list">
+     <view class="item">
+          <view class="left">
+               <view class="top">保证金扣除</view>
+               <view class="middle">竞价物品【瑶山劲舞】</view>
+               <view class="bottom">2019-09-26  14:26:35</view>
+          </view>
+          <view class="right">
+               - 400.00
+          </view>
+     </view>
+     <view class="item">
+          <view class="left">
+               <view class="top">保证金占用</view>
+               <view class="middle">竞价物品【瑶山劲舞】</view>
+               <view class="bottom">2019-09-26  14:26:35</view>
+          </view>
+          <view class="right">
+               + 400.00
+          </view>
+     </view>
+      <view class="item">
+          <view class="left">
+               <view class="top">保证金退还</view>
+               <view class="middle">竞价物品【瑶山劲舞】</view>
+               <view class="bottom">2019-09-26  14:26:35</view>
+          </view>
+          <view class="right">
+               + 400.00
+          </view>
+     </view>
+     <view class="item">
+          <view class="left">
+               <view class="top">充值</view>
+               <view class="bottom">2019-09-26  14:26:35</view>
+          </view>
+          <view class="right">
+               + 400.00
+          </view>
+     </view>
+      <view class="item">
+          <view class="left">
+               <view class="top">提现</view>
+               <view class="bottom">2019-09-26  14:26:35</view>
+          </view>
+          <view class="right">
+               - 400.00
+          </view>
+     </view>
+</view>

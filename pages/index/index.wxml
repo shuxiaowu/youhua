@@ -1,0 +1,90 @@
+<view class="search_box">
+    <view class="search">
+        <input placeholder="搜索作者或者拍品名称" placeholder-style="color:#b1b1b1;"  bindfocus="inp" bindinput="inp1" value="{{value}}" ></input>
+        <icon class="iconfont icon-sousuo" bindtap="search"></icon>
+    </view>
+    <view class="btn" hidden="{{btn}}" >取消</view>
+    <view class="btn1" bindtap="cancel"></view>
+</view>
+<view class="banner" wx:if="{{page}}">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" indicator-color="rgba(0,0,0,0.5)" circular="true" indicator-active-color="#f2f2f2" duration="1000">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src='{{item}}' mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="label">
+        张立农《夏日海岸》
+    </view>
+</view>
+<view class="title" wx:if="{{page}}">
+    热门拍品
+</view>
+<view class="product" wx:if="{{product1}}">
+    <block wx:for="{{product}}">
+        <view class="item">
+            <navigator class="picture" url="{{item.url}}">
+                <image src="{{item.src}}" mode="widthFix"></image>
+            </navigator>
+            <view class="name">{{item.name}}</view>
+            <view class="price"> <text>当前价</text>￥{{item.price}}</view>
+            <view class="time">
+                <view class="left">{{item.time}}结拍</view>
+                <view class="right iconfont {{item.ig==0?'icon-shoucang':'icon-hongxin'}}" bindtap="sc_click" data-on="{{item.id}}"></view>
+            </view>
+            <view class="label" wx:if="{{item.label}}">{{item.label}}</view>
+            <view class="label1" wx:if="{{item.label1}}">{{item.label1}}</view>
+        </view>
+    </block>
+</view>
+<view class="title" wx:if="{{page}}">
+    热门专场
+</view>
+<view class="list" wx:if="{{page}}">
+    <block wx:for="{{list}}">
+      <view class="item">
+          <navigator url="{{item.url}}" class="picture">
+              <image src="{{item.imgSrc}}" mode="widthFix"></image>
+              <view class="label">{{item.label}}</view>
+          </navigator>
+          <view>
+              <view class="label1">{{item.label1}}</view>
+              <view class="time">{{item.time}}</view>
+              <view class="ico" wx:if="{{item.price}}">|</view>
+              <view class="price" wx:if="{{item.price}}"><text> 最低起拍价</text>￥{{item.price}}</view>
+          </view>
+          <view>
+              <view class="label2">
+                  <view class="left">佣</view>
+                  <view class="right">{{item.label2}}</view>
+              </view>
+              <view class="label2 label3">
+                  <view class="left">阶</view>
+                  <view class="right">{{item.label3}}</view>
+              </view>
+          </view>
+      </view>
+      </block>
+</view>
+<view class="btn_box" wx:if="{{page}}">
+      <view class="line"></view>
+      <view class="btn">查看更多</view>
+      <view class="line"></view>
+</view>
+<view class="history" wx:if="{{history}}">
+     <view class="title1">
+          <view class="text">历史搜索</view>
+          <view class="iconfont icon-shanchu" bindtap="cancel1"></view>
+     </view>
+     <view class="label">
+         <view class="item">一佳佳油画作品</view>
+         <view class="item">高山流水的油画作品</view>
+         <view class="item">油画</view>
+         <view class="item">珠宝玛瑙</view>
+     </view>
+</view>
+<view class="page0" wx:if="{{page0}}">
+    <image src="/img/ss.png"></image>
+    <view class="text">换个搜索词试试把！</view>
+</view>

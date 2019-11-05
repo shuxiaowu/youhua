@@ -1,0 +1,100 @@
+page{
+background:#f2f2f2;
+}
+.site0 image{
+width: 310rpx;
+margin:225rpx auto 0;
+display:block;
+}
+.site0 .p{
+color: #666666;
+font-size:32rpx;
+text-align:center;
+margin-top:45rpx;
+}
+.btn{
+width:100%;
+height: 100rpx;
+background-color: #ffffff;
+box-shadow: 0px 0px 21rpx 0px 
+  rgba(145, 145, 145, 0.4);
+display:flex;
+align-items:center;
+justify-content:center;
+position:fixed;
+bottom:0;
+z-index:1;
+}
+
+.btn .iconfont{
+font-size:48rpx;
+color:#4a4a4a;
+}
+.btn .p{
+color: #333333;
+font-size:32rpx;
+margin-left:26rpx;
+}
+
+.list .item{
+display:flex;
+width:100%;
+background:#fff;
+height:183rpx;
+margin-top:11rpx;
+}
+.list .item .con{
+width:544rpx;
+margin-left:28rpx;
+}
+.list .item .con .top{
+display:flex;
+align-items:center;
+margin-top:30rpx;
+}
+.list .item .con .top .name{
+color: #333333;
+font-size:30rpx;
+font-weight:bold;
+}
+.list .item .con .top .phone{
+color: #333333;
+font-size:30rpx;
+margin:0 45rpx 0 37rpx;
+}
+.list .item .con .top .default{
+width: 73rpx;
+height: 39rpx;
+background-color: #FFf;
+border-radius: 4rpx;
+color:#fff;
+text-align:center;
+line-height:39rpx;
+font-size: 24rpx;
+}
+.list .item .con .top .d_active{
+background:#000;
+}
+.list .item .con .bottom{
+color: #666666;
+font-size:26rpx;
+line-height:36rpx;
+margin-top:24rpx;
+width:100%;
+word-break:break-all;
+display:-webkit-box;
+-webkit-line-clamp:2;
+-webkit-box-orient:vertical;
+overflow:hidden;
+}
+.list .item .iconfont{
+color: #454545;
+font-size:31rpx;
+align-self:center;
+width:128rpx;
+height:63rpx;
+border-left:1rpx solid #d8d8d8;
+text-align:center;
+line-height:63rpx;
+margin-left:49rpx;
+}

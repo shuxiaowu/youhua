@@ -1,0 +1,92 @@
+<view class="nav">
+    <view   class="item {{onpage==0 ? 'active' : ''}}" bindtap='nav_click' data-on='0'>
+         未使用
+    </view>
+     <view  class="item {{onpage==1 ? 'active' : ''}}" bindtap='nav_click' data-on='1'>
+         已使用
+    </view>
+     <view  class="item {{onpage==2 ? 'active' : ''}}" bindtap='nav_click' data-on='2'>
+         已过期
+    </view>
+</view>
+
+<view class="list">
+    <view class="item" wx:if="{{onpage==0}}">
+        <view class="left">
+             <view class="top">满1000减120</view>
+             <view class="bottom">优惠卷</view>
+        </view>
+        <view class="right">
+             <view class="top">全场通用红包</view>
+             <view class="middle">有效期限：2019-10-01</view>
+             <view class="bottom">立即使用</view>
+        </view>
+        <image class="ico1" src="../../img/ico18.png" mode="widthFix"></image>
+    </view>
+    <view class="item" wx:if="{{onpage==0}}">
+      <view class="left">
+            <view class="top">满1000减120</view>
+            <view class="bottom">优惠卷</view>
+      </view>
+      <view class="right">
+            <view class="top">全场通用红包</view>
+            <view class="middle">有效期限：2019-10-01</view>
+            <view class="bottom">立即使用</view>
+      </view>
+      <image class="ico1" src="../../img/ico18.png" mode="widthFix"></image>
+    </view>
+
+     <view class="item item1" wx:if="{{onpage==1}}">
+        <view class="left">
+             <view class="top">满1000减120</view>
+             <view class="bottom">优惠卷</view>
+        </view>
+        <view class="right">
+             <view class="top">全场通用红包</view>
+             <view class="middle">有效期限：2019-10-01</view>
+             <view class="bottom">立即使用</view>
+        </view>
+        <image class="ico1" src="../../img/ico20.png" mode="widthFix"></image>
+     </view>
+     <view class="item item1" wx:if="{{onpage==1}}">
+        <view class="left">
+             <view class="top">满1000减120</view>
+             <view class="bottom">优惠卷</view>
+        </view>
+        <view class="right">
+             <view class="top">全场通用红包</view>
+             <view class="middle">有效期限：2019-10-01</view>
+             <view class="bottom">立即使用</view>
+        </view>
+        <image class="ico1" src="../../img/ico20.png" mode="widthFix"></image>
+     </view>
+
+
+     <view class="item item1" wx:if="{{onpage==2}}">
+        <view class="left">
+             <view class="top">满1000减120</view>
+             <view class="bottom">优惠卷</view>
+        </view>
+        <view class="right">
+             <view class="top">全场通用红包</view>
+             <view class="middle">有效期限：2019-10-01</view>
+             <view class="bottom">立即使用</view>
+        </view>
+        <image class="ico1" src="../../img/ico20.png" mode="widthFix"></image>
+        <image class="ico2" src="../../img/ico19.png" mode="widthFix"></image>
+     </view>
+
+     <view class="item item1" wx:if="{{onpage==2}}">
+        <view class="left">
+             <view class="top">满1000减120</view>
+             <view class="bottom">优惠卷</view>
+        </view>
+        <view class="right">
+             <view class="top">全场通用红包</view>
+             <view class="middle">有效期限：2019-10-01</view>
+             <view class="bottom">立即使用</view>
+        </view>
+        <image class="ico1" src="../../img/ico20.png" mode="widthFix"></image>
+        <image class="ico2" src="../../img/ico19.png" mode="widthFix"></image>
+     </view>
+</view>

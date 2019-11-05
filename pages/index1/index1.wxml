@@ -1,0 +1,3 @@
+<image class="bg" src="/img/index1_bg.png" bindtap="go_items"></image>
+<image class="btn" src="/img/btn.png" mode="widthFix"  bindtap="go_index"></image>
+<view class="title">续鹤贤  《瑶山劲舞》 </view>

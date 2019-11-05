@@ -1,0 +1,47 @@
+<view class="product">
+    <view class="picture">
+        <image src="../../img/ico17.png" mode="widthFix"></image>
+    </view>
+    <view class="label">
+        <view class="top">古代石器 高古石雕 隋唐 老古董古玩高古 石头 收藏 宋元 石兽</view>
+        <view class="bottom">
+             <view class="left">￥7200.00</view>
+             <view class="right">X1</view>
+        </view>
+    </view>
+</view>
+<view class="list">
+     <view class="item">
+          <view class="left">竞拍时间：</view>
+          <view class="right">2019-09-26 14:25:36</view>
+     </view>
+      <view class="item">
+          <view class="left">竞拍方式：</view>
+          <view class="right">委托竞拍</view>
+     </view>
+      <view class="item">
+          <view class="left">订单号：</view>
+          <view class="right">158961256265621589962124584</view>
+     </view>
+      <view class="item">
+          <view class="left">保证金：</view>
+          <view class="right">￥720.00</view>
+     </view>
+      <view class="item">
+          <view class="left">佣金：</view>
+          <view class="right">￥720.00</view>
+     </view>
+      <view class="item">
+          <view class="left">委托金额：</view>
+          <view class="right">￥7200.00</view>
+     </view>
+      <view class="item">
+          <view class="left">失效时间：</view>
+          <view class="right">2019-10-02 14:25:36</view>
+     </view>
+</view>
+<image class="ico" src="../../img/ico16.png" mode="widthFix"></image>
+<view class="btn_box">
+    <view class="btn">联系商家</view>
+    <view class="btn">删除订单</view>
+</view>

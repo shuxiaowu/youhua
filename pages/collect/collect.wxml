@@ -1,0 +1,31 @@
+<view class="content">
+    <block  wx:for="{{list}}" wx:for-item="item">
+        <view class="item">
+            <view class="photo">
+                <image src="{{item.src}}" mode="widthFix"></image>
+                <view class="label" wx:if="{{item.label_show==1}}">{{item.label}}</view>
+                <view class="label1" wx:if="{{item.label_show==2}}">{{item.label}}</view>
+            </view>
+            <view class="title1">{{item.name}}</view>
+            <view class="title2">当前价 <text class="price"> {{item.price}} </text></view>
+            <view class="title3">
+                <view class="left">{{item.time}}</view>
+                <view class="{{item.onpage==1? 'iconfont icon-hongxin':'iconfont icon-shoucang'}}" bindtap="on_click" data-on='{{item.id}}'></view>
+            </view>
+        </view>
+        <view class="pop_box" wx:if="{{item.pop}}">
+          <view class="pop">
+                <view class="top">确定取消该拍品收藏？</view>
+                <view class="bottom">
+                      <view class="btn btn1" bindtap="cancel" data-on='{{item.id}}'>
+                          取消
+                      </view>
+                      <view class="btn btn2" bindtap="sc_click" data-on='{{item.id}}'>
+                          确定
+                      </view>
+                </view>
+          </view>
+      </view>
+    </block>
+</view>
+

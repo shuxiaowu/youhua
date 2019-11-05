@@ -1,0 +1,78 @@
+.list .item{
+padding:31rpx 31rpx 0;
+box-sizing:border-box;
+border-top:9rpx solid #f2f2f2;
+border-bottom:1rpx solid #f2f2f2; 
+}
+.list .item .top{
+display:flex;
+justify-content:space-between;
+}
+.list .item .top .picture{
+width: 175rpx;
+height: 175rpx;
+background-color: #7d7d7d;
+border-radius: 8rpx;
+display:flex;
+align-items:center;
+}
+.list .item .top .content{
+width:476rpx;
+}
+.list .item .top .content .label1{
+font-size: 28rpx;
+line-height:40rpx;
+color:#333;
+margin:14rpx 0;
+width:100%;
+}
+.list .item .top .content .label2{
+display:flex;
+justify-content:space-between;
+}
+.list .item .top .content .label2 .left{
+font-size: 24rpx;
+color: #666666;
+}
+.list .item .top .content .label2 .left .price{
+color:#333;
+font-size:28rpx;
+}
+.list .item .top .content .label2 .left .price icon{
+font-size:24rpx;
+}
+.list .item .top .content .label2 .right{
+color: #ff3030;
+font-size:24rpx;
+}
+.list .item .bottom{
+display:flex;
+justify-content:space-between;
+height:85rpx;
+line-height:85rpx;
+border-top:1rpx solid #f1f1f1;
+margin-top:37rpx;
+}
+.list .item .bottom .left{
+color: #333333;
+font-size: 28rpx;
+font-weight:bold;
+}
+.list .item .bottom .right{
+color: #666666;
+font-size: 24rpx;
+}
+.list .item{
+position:relative;
+}
+.list .item .ico{
+width:220rpx;
+height:220rpx;
+position:absolute;
+top:48rpx;
+right:31rpx;
+}
+.list .item .icon-you{
+color: #fa3636;
+font-size:24rpx;
+}
